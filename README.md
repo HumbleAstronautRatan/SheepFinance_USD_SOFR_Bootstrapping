@@ -1,3 +1,3 @@
 # USD_SOFR_Bootstrapping
-Similar to any curve, bootstrapping is the process of finding the rate that makes the fix and float legs of a vanilla Interest Rate swap become equal. 
-Note: USD SOFR curve bootstrapping curve convention shall be identical to the one found on Bloomberg, the code can be extended to other Currencies by changing the curve conventions and calendar.
+Post IBOR transition the Federal Reserve Bank published overnight SOFR rates (Par Rates) now considered benchmark Rates for USD Swaps. For Risk valuations, it is appreciated that one shall use Zero Rates derived from the above.
+The idea is simple, assume a Vanilla interest rate Swap deal with the usual fixed and floating leg, The process of identifying the rate that makes the fixed and float leg equal is called bootstrapping, and the solved rate is called Zero Rate.
